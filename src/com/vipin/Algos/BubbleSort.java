@@ -21,6 +21,7 @@ public class BubbleSort {
             }
         }
 
+        System.out.println("sorted array is");
         for (int a = 0; a < array.length; a++){
         System.out.println(array[a]);
         }
