@@ -10,6 +10,5 @@ class Conversion {
         System.out.println("print"+d);
         System.out.println(c + " " + d);
 
-        // output is not clear
     }
 }
