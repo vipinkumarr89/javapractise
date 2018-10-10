@@ -72,7 +72,7 @@ public class Employee {
     }
 }
 
-/*
+/* OUTPUT:
 
 please Enter the number of employee
 2
