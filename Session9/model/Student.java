@@ -1,4 +1,4 @@
-package EdurekaApr28.Session9.src.co.edureka.model;
+package Session9.model;
 
 // Model or Bean or POJO(Plain Old Java Object)
 public class Student {
