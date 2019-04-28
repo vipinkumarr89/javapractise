@@ -1,6 +1,5 @@
 package com.log4j;
 import org.apache.log4j.Logger;
-
 import java.util.ArrayList;
 
 public class FirstLog4j {
