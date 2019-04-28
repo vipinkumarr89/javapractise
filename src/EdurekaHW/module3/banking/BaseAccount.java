@@ -46,7 +46,7 @@ public class BaseAccount{
         try{
             Class.forName("com.mysql.jdbc.Driver");
             Connection con= DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/edureka","root","");
+                    "jdbc:mysql://localhost:3306/edureka","root","password");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("select max(Accountnumber) from Banking");
 //            System.out.println("Accountnumber is "+Accountnumber);
@@ -61,7 +61,7 @@ public class BaseAccount{
         try{
             Class.forName("com.mysql.jdbc.Driver");
             Connection con= DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/edureka","root","");
+                    "jdbc:mysql://localhost:3306/edureka","root","password");
             Statement stmt=con.createStatement();
             int rs=stmt.executeUpdate("insert into Banking(Accountnumber) values ("+Accountnumber+")");
             con.close();
@@ -74,7 +74,7 @@ public class BaseAccount{
         try{
             Class.forName("com.mysql.jdbc.Driver");
             Connection con= DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/edureka","root","");
+                    "jdbc:mysql://localhost:3306/edureka","root","password");
             Statement stmt=con.createStatement();
             int rs=stmt.executeUpdate("update Banking set AccountName = '"+AccountName+"' where Accountnumber = "+Accountnumber);
                     con.close();
@@ -90,7 +90,7 @@ public class BaseAccount{
         try{
             Class.forName("com.mysql.jdbc.Driver");
             Connection con= DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/edureka","root","");
+                    "jdbc:mysql://localhost:3306/edureka","root","password");
             Statement stmt=con.createStatement();
             int rs=stmt.executeUpdate("update Banking set AccountBalance = '"+AccountBalance+"' where Accountnumber = "+Accountnumber);
                     con.close();
@@ -103,7 +103,7 @@ public class BaseAccount{
         try{
             Class.forName("com.mysql.jdbc.Driver");
             Connection con= DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/edureka","root","");
+                    "jdbc:mysql://localhost:3306/edureka","root","password");
             Statement stmt=con.createStatement();
             int rs=stmt.executeUpdate("update Banking set AccountType = '"+AccountType+"' where Accountnumber = "+Accountnumber);
                     con.close();
@@ -114,7 +114,7 @@ public class BaseAccount{
         try{
             Class.forName("com.mysql.jdbc.Driver");
             Connection con= DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/edureka","root","");
+                    "jdbc:mysql://localhost:3306/edureka","root","password");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("select Accountnumber from Banking where Accountnumber="+Accountnumber);
             while (rs.next()) Accountnumber = rs.getInt(1);
@@ -127,7 +127,7 @@ public class BaseAccount{
         try{
             Class.forName("com.mysql.jdbc.Driver");
             Connection con= DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/edureka","root","");
+                    "jdbc:mysql://localhost:3306/edureka","root","password");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("select AccountName from Banking where Accountnumber = "+Accountnumber);
             while (rs.next()) AccountName = rs.getString(1);
@@ -140,7 +140,7 @@ public class BaseAccount{
         try{
             Class.forName("com.mysql.jdbc.Driver");
             Connection con= DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/edureka","root","");
+                    "jdbc:mysql://localhost:3306/edureka","root","password");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("select AccountBalance from Banking where Accountnumber = "+Accountnumber);
             while (rs.next()) AccountBalance = rs.getInt(1);
@@ -153,7 +153,7 @@ public class BaseAccount{
         try{
             Class.forName("com.mysql.jdbc.Driver");
             Connection con= DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/edureka","root","");
+                    "jdbc:mysql://localhost:3306/edureka","root","password");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("select AccountType from Banking where Accountnumber = "+Accountnumber);
             while (rs.next()) AccountType = rs.getString(1);

@@ -139,17 +139,17 @@ public class BaseAccount{
         return AccountName;
     }
 
-    public int getAmount(int Accountnumber) {
+    public double getAmount(double Accountnumber) {
         try{
             Class.forName("com.mysql.jdbc.Driver");
             Connection con= DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/edureka","root","");
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("select AccountBalance from Banking where Accountnumber = "+Accountnumber);
-            while (rs.next()) AccountBalance = rs.getInt(1);
+            while (rs.next()) AccountBalance = rs.getDouble(1);
                     con.close();
         }catch(Exception e){ System.out.println(e);}
-        return (int)AccountBalance;
+        return AccountBalance;
     }
 
     public String getAccountType(int Accountnumber) {

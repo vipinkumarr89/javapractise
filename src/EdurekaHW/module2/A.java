@@ -1,4 +1,4 @@
-package EdurekaHW;
+package EdurekaHW.module2;
 
 public class A {
     public static void main(String args[]) {
@@ -7,7 +7,7 @@ public class A {
 
 
         int[] iArray = new int[10];
-        iArray.length = 15;
+//        iArray.length = 15;
         System.out.println(iArray.length);
 
         int[] a = { 1, 2, 3 };

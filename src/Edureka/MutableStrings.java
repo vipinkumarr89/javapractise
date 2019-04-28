@@ -8,7 +8,6 @@ public class MutableStrings {
         String str = new String("John");
         str.concat(" wick");
 
-
         System.out.println("str is: " + str);
 
         String str1 = str.concat(" Watson"); // Concatenating a String as in a new String

@@ -1,11 +1,21 @@
 package EdurekaHW.module4;
 
-public interface Rectangle {
+interface Area {
 
-    public double area(int length, int breadth);
+    public double area(double length, double breadth);
 }
 
 
-class area {
-    public void area
+class rectangle implements Area{
+
+    @Override
+    public double area(double length, double breadth) {
+        return length*breadth;
+    }
+
+    public static void main(String[] args) {
+        rectangle obj = new rectangle();
+        System.out.println("Area of rectangle is "+obj.area(4,3));
+    }
+
 }

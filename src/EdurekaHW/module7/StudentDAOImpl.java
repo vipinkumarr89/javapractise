@@ -62,8 +62,8 @@ public class StudentDAOImpl implements StudentDAO{
 
 //    @Override
     public void updateStudent(Student stud) throws Exception {
-        String sql = "update edureka.Student set  " +
-                "NAME='" +stud.getStudentName()+"'," +
+        String sql = "update edureka.Student set  "
+                + "NAME='" +stud.getStudentName()+"'," +
                 "CLASS=" +stud.getStudentClass()+"," +
                 "MARKS=" +stud.getStudentMarks() +
                 " where ID=" +stud.getStudentID();

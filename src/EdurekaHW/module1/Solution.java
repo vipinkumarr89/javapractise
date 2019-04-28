@@ -1,4 +1,4 @@
-package EdurekaHW;
+package EdurekaHW.module1;
 
 import java.util.*;
 

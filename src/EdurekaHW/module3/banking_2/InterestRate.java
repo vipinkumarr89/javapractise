@@ -29,12 +29,12 @@ public class InterestRate {
             Connection con = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/edureka", "root", "");
             Statement stmt = con.createStatement();
-            ResultSet rs = stmt.executeQuery("SELECT TIME_TO_SEC(Now()) - TIME_TO_SEC(TimeStamp) from Banking where Accountnumber ="+Accountnumber);
+            ResultSet rs = stmt.executeQuery("SELECT UNIX_TIMESTAMP(Now()) - UNIX_TIMESTAMP(TimeStamp) from Banking where Accountnumber ="+Accountnumber);
             while (rs.next()) timestamp = rs.getDouble(1);
         } catch (Exception e) {
             System.out.println(e);
         }
-        return (double)timestamp;
+        return timestamp;
     }
 
     public double CalcuateInterest(int Accountnumber) {
@@ -45,7 +45,7 @@ public class InterestRate {
         if (accountType.equals("SB_Account")) {
             BaseAccount baseAccount = new BaseAccount();
             AccountBalance = baseAccount.getAmount(Accountnumber);
-            timestamp = (double)interestRate.TimeStamp(Accountnumber);
+            timestamp = interestRate.TimeStamp(Accountnumber);
             double totalhours = 365*24;
             double totalsecs = totalhours * 360;
 

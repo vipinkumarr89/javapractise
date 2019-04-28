@@ -16,12 +16,13 @@ public class TableOfFiveUsingThread extends Thread{
             System.out.println("Exception is "+e);
         }
     }
+
     public static void main(String[] args) {
         TableOfFiveUsingThread obj = new TableOfFiveUsingThread();
         obj.start();
         for(int i=1;i<=10;i++){
             System.out.println(i+" even number is :"+(i*2));
-            System.out.println(" Thread " +Thread.currentThread().getName());
+            System.out.println("In main Thread for "+i+" time and thread name is " +Thread.currentThread().getName());
         }
     }
 }

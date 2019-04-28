@@ -1,30 +1,31 @@
 package EdurekaHW.module5;
 
-//public class Solution { public static void main (String args[])
-//{
+//public class Solution {
+//    public static void main (String args[]) {
 //    Integer i = 200;
 //    int j = 100;
 //    j = i;
-//    System.out.println(i + j + 200);  }
+//    System.out.println(i + j + 200);
+//}
 //}
 
 ////////////////////////////////////////////////////////////////////
-//class OuterClass {
-//    int x = 100;
-//    class InnerClass {
-//        int y = 200;
-//        void display() {
-//            System.out.println(x + y);
-//        }
-//    }
-//}
-//public class Solution {
-//    public static void main (String args[]) {
-//        OuterClass o1 = new OuterClass();
-//        OuterClass.InnerClass i1 =  o1.new  InnerClass();
-//        i1.display();
-//    }
-//}
+class OuterClass {
+    int x = 100;
+    class InnerClass {
+        int y = 200;
+        void display() {
+            System.out.println(x + y);
+        }
+    }
+}
+public class Solution {
+    public static void main (String args[]) {
+        OuterClass o1 = new OuterClass();
+        OuterClass.InnerClass i1 =  o1.new  InnerClass();
+        i1.display();
+    }
+}
 ////////////////////////////////////////////////////////////////////
 //import java.io.FileInputStream;
 //import java.io.IOException;
@@ -57,7 +58,7 @@ package EdurekaHW.module5;
 //}
 ////////////////////////////////////////////////////////////////////
 
-import java.util.*;
+//import java.util.*;
 
 //import java.util.*;
 //public class Solution
@@ -109,14 +110,15 @@ import java.util.*;
 //        }
 //    }
 
-public class Solution {
-    public static void main(String[] args) {
-        System.out.println("started");
-        PriorityQueue pq = new PriorityQueue();
-        pq.add("carrot");
-        pq.add("apple");
-        pq.add("banana");
-        System.out.println(pq.poll() + ":" + pq.peek());
+//public class Solution {
+//    public static void main(String[] args) {
+//        System.out.println("started");
+//        PriorityQueue pq = new PriorityQueue();
+//        pq.add("apple");
+//        pq.add("banana");
+//        pq.add("carrot");
+//        System.out.println(pq.poll()) ;
+//        System.out.println(pq.peek());
 
-    }
-}
+//    }
+//}

@@ -1,4 +1,4 @@
-package EdurekaApr28.Session4.src;
+package Edureka;
 
 class Counter{
 
@@ -19,13 +19,12 @@ class Counter{
 		System.out.println("count is: "+count);
 		System.out.println("sCount is: "+sCount);
 	}
-	
-}
 
+}
 public class StaticDemoAgain {
 
 	public static void main(String[] args) {
-		
+
 		Counter c1 = new Counter();
 		Counter c2 = new Counter();
 		
@@ -38,15 +37,13 @@ public class StaticDemoAgain {
 		
 		c2.incrementCount();  // c2 3 | class 5
 		c3.incrementCount();  // c3 4 | class 6
-		
+
 		c2.incrementCount();  // c2 4 | class 7
 		
-		Counter.sCount = 100;
+//		Counter.sCount = 100;
 							// c     sc
 		c1.showCount();     // 2,4   2,7
 		c2.showCount();     // 2     2
 		c3.showCount();     // 2     2
-
 	}
-
 }

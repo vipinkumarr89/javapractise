@@ -11,7 +11,7 @@ public class Module5Collection3 {
 //        System.out.println(hashtable.keys());
 
         // Iteration using enumeration
-        Enumeration enumeration = hashtable.keys();
+//        Enumeration enumeration = hashtable.keys();
 
         // Display using while loop
         Collection values = hashtable.values();

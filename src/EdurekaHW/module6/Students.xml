@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<students>
+    <student id="101">
+        <name>Varun</name>
+        <standard>XI</standard>
+        <marks>1234</marks>
+        <address>UP</address>
+        <gender>M</gender>
+    </student>
+
+    <student id ="102">
+        <name>Vipin</name>
+        <standard>XII</standard>
+        <marks>1235</marks>
+        <address>UP</address>
+        <gender>M</gender>
+    </student>
+</students>

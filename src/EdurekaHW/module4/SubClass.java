@@ -10,7 +10,8 @@ class SuperClass {
 
 public class SubClass extends SuperClass
 {
-    public int doIt(String str, int data) throws Exception
+    public int doIt(String str, int data) //throws Exception
+    //overridden method does not throw java.lang.Exception
     {
         String signature = "test";
         System.out.println("Overridden: " + str + " " + signature);
@@ -18,7 +19,7 @@ public class SubClass extends SuperClass
     }
     public static void main(String args[])
     {
-        SuperClass sb = new SubClass();
+        SubClass sb = new SubClass();
         try{
             sb.doIt("hello", 3);
         }catch(Exception e){

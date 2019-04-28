@@ -12,7 +12,7 @@ public class StudentMain {
         studentDAO.deleteStudent(ID);
         System.out.println("======================================================");
 
-        Student student = new Student(4, "arun", 11, 12);
+        Student student = new Student(1, "arun", 11, 12);
         studentDAO.saveStudent(student);
         System.out.println("======================================================");
 
@@ -22,7 +22,7 @@ public class StudentMain {
         studentDAO.searchStudent(ID1);
         System.out.println("======================================================");
 
-        Student student1 = new Student(4, "Varun", 11, 12);
+        Student student1 = new Student(1, "Varun", 11, 12);
         studentDAO.updateStudent(student1);
         System.out.println("======================================================");
 

@@ -1,16 +1,26 @@
 package EdurekaHW.module4;
 
-public class ExceptionHandling {
+import java.io.IOException;
 
-    public static void main(String[] args) {
-        int a = 100;
-        int b = a / 0;
-        try {
-            System.out.println("output is " + b);
-        } catch (Exception e) {
-            System.out.println("Divide by Zero" + e);
-        } finally {
-            System.out.println("Exception handling is complete");
+public class ExceptionHandlingDemo {
+
+//    public static void main(String[] args) {
+//
+//        ExceptionHandlingDemo exceptionHandlingDemo = new ExceptionHandlingDemo();
+//        exceptionHandlingDemo.exception();
+//    }
+
+        public void exception () throws IOException {
+            try {
+                int a = 100;
+                int b = a / 0;
+                System.out.println("output is " + b);
+            } catch (ArithmeticException e) {
+                System.out.println("Divide by Zero " + e);
+            } finally {
+                System.out.println("Exception handling is complete");
+            }
+
         }
-    }
+
 }

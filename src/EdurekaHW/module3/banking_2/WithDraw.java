@@ -26,11 +26,12 @@ public class WithDraw{
         }
         else if (WithDrawAmount <= AccountBalance && WithDrawAmount > 0 && AccountBalance > 0 && (AccountBalance - WithDrawAmount) > minBalance ){
             AccountBalance = AccountBalance - WithDrawAmount + interestearned;
-            System.out.println("Amount WithDrawn "+WithDrawAmount);
             System.out.println("=======================================");
+            System.out.println("Amount WithDrawn "+WithDrawAmount);
             baseAccount.setAmount(WithDrawAmount*-1,AccountNumber);
             System.out.println("Interest Earned "+interestearned);
             System.out.println("Available Balance is : "+baseAccount.getAmount(AccountNumber));
+            System.out.println("=======================================");
         }
         else {
             System.out.println("=======================================");

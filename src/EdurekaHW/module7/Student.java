@@ -17,7 +17,9 @@ public class Student {
         this.StudentMarks = studentMarks;
     }
 
-    public int getStudentID() { return StudentID; }
+    public int getStudentID() {
+        return StudentID;
+    }
 
     public void setStudentID(int studentID) {
         StudentID = studentID;
